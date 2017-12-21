@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이름과 전화번호를 입력하는 폼</title>
+</head>
+<body>
+<h2>이름과 전화번호 입력</h2>
+<form action="ifMultipro.jsp" method="post">
+	이름:<input type="text" name="name"><br>
+	전화번호:
+	<select name="local">
+		<option value="서울">서울</option>
+		<option value="경기">경기</option>
+		<option value="강원">강원</option>
+	</select>
+	- <input type="text" name="tel" maxlength=10><br>
+	휴대전화:
+	<select name="mobile">
+		<option value="kt">kt</option>
+		<option value="skt">skt</option>
+		<option value="lg">lg</option>
+	</select>
+	-<input type="text" name="mid" size=4 maxlength=4>
+	-<input type="text" name="end" size=4 maxlength=4><br>
+	<input type="submit" name="전송">
+</form>
+
+</body>
+</html>
