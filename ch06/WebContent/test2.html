@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<ul>
+		<li>first</li> <!-- 이게 선택됨 -->
+		<li>second</li>
+		<li>third</li>
+	</ul>
+	<script type="text/javascript">
+		/* querySelector(css선택자) -ie8에서 추가 */
+		var li = document.querySelector('li');
+		li.style.color = 'red';
+		li.style.background = 'blue';
+	</script>
+	<!-- DOM 메소드 
+		document.getElementsByTagName(요소명) - 태그명으로 여러문서 객체 선택
+	-->
+</body>
+</html>
