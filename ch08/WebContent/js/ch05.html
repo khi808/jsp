@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Text와 DOM</title>
+</head>
+<body>
+	<div id="content"></div>
+	
+<script type="text/javascript">
+	var content
+		= document.querySelector('#content'); // id가 content인 요소 선택
+		
+	// text 삽입
+	content.innerText = "<h1>new Text</h1>";
+	// html 삽입
+	content.innerHTML += "<h1>new Text</h1>"
+</script>
+</body>
+</html>

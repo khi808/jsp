@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	#box{ /* id선택 */
+		width:100px;
+		height:100px;
+		border:3px solid black;
+	}
+	.box{ /* 클래스 선택 */
+		background:orange;
+	}
+</style>
+<meta charset="UTF-8">
+<title>box 속성 DOM</title>
+</head>
+<body>
+	<div id="box">색상 바꾸기</div>
+	<button onclick="setColor()">클릭</button>
+	<button onclick="chageColor()">2클</button>
+<script type="text/javascript">
+	function setColor(){
+		var box = document.getElementById('box');
+		box.style.color = 'white';
+		box.style.backgroundColor = 'orange';
+	}
+	function chageColor(){
+		var box = document.getElementById('box');
+		box.setAttribute('class','box');
+	}
+</script>
+</body>
+</html>
