@@ -4,4 +4,7 @@
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.apache.tomcat.dbcp.dbcp2.DriverManagerConnectionFactory"/>
+<fullyQualifiedTypeName name="org.apache.tomcat.dbcp.dbcp2.PoolableConnectionFactory"/>
+<fullyQualifiedTypeName name="org.apache.tomcat.dbcp.dbcp2.ConnectionFactory"/>
 </qualifiedTypeNameHistroy>

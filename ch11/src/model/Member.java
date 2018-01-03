@@ -8,8 +8,12 @@ public class Member {
 	private String id;
 	private String password;
 	private String name;
-	private Date birth;
+	private String birth;
 	private Date regdate;
+	// 추가
+	private String address;
+	private String tel;
+	private String email;
 	// 생성자
 	public Member() {}
 	// 메소드
@@ -19,10 +23,16 @@ public class Member {
 	public String getName() {return name;}
 	public void setName(String name) {this.name = name;}
 	public void setPassword(String password) {this.password = password;}
-	public Date getBirth() {return birth;}
-	public void setBirth(Date birth) {this.birth = birth;}
+	public String getBirth() {return birth;}
+	public void setBirth(String birth) {this.birth = birth;}
 	public Date getRegdate() {return regdate;}
 	public void setRegdate(Date regdate) {this.regdate = regdate;}
+	public String getAddress() {return address;	}
+	public void setAddress(String address) {this.address = address;	}
+	public String getTel() {return tel;	}
+	public void setTel(String tel) {this.tel = tel;	}
+	public String getEmail() {return email;	}
+	public void setEmail(String email) {this.email = email;	}
 	
 	
 	
