@@ -26,11 +26,39 @@
 	 return true;
  }
 </script>
+<script type="text/javascript">
+function open_chk(){
+	var id = document.getElementById('id').value;
+	if(id.length==0){
+		alert("id를 입력하세요");
+		document.getElementById('id').focus();
+		return ;
+	}
+	//팝업윈도우 호출(BOM)
+	//window.open(파일명,"title",속성);
+	//여기(subscribe.jsp)가 부모(opener)가 됨.
+	window.open("idCheck.jsp?id="+id,"idchk","height=100,width=450,resize=yes");
+} //idCheck.jsp?id=dd
+</script>
+<script type="text/javascript">
+function open_emailChk(){
+	var email = document.getElementById('email').value;
+	if(email.length==0){
+		alert("email을 입력하세요");
+		document.getElementById('email').focus();
+		return;
+	}
+	window.open("emailCheck.jsp?email="+email,"emailchk","height=100,width=450,resize=yes");
+}
+</script>
 </head>
 <body>
-<form action="subscribeProc.jsp" onsubmit="return chk()">
+<form action="subscribeProc.jsp" onsubmit="return chk()" name="frm">
 	<table border=1 bgcolor="yellow">
-	<tr><td>*ID:</td><td><input type="text" name="id" id="id" ></td>
+	<tr><td>*ID:</td><td><input type="text" name="id" id="id" >
+				<input type="button" name="isId" id="isId" value="IDcheck" 
+				       onclick="open_chk()">
+	</td>
 	</tr>
 	<tr><td>*PASSWORD</td>
 	    <td><input type="password" name="password" id="password"></td>
@@ -46,7 +74,8 @@
 	</tr>
 	<tr><td>tel</td><td><input type="text" name="tel" id="tel"></td>
 	</tr>
-	<tr><td>*email</td><td><input type="email" name="email" id="email" required></td>
+	<tr><td>*email</td><td><input type="email" name="email" id="email" required>
+	<input type="button" name="isEmail" id="isEmail" value="EmailCheck" onclick="open_emailChk()"></td>
 	</tr>
 	<tr>
 		<td colspan=2 align="center"><input type="submit" value="확인">
